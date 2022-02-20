@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+
+  
+  
+  <main>
+    <h1 class="sr-only">Base apparel website</h1>
+
+    <div class="container">
+      <img class="logo " src="./images/logo.svg" alt="" aria-label="true"> 
+      <img class="logo-desk oculto-desk" src="./images/hero-mobile.jpg" alt="" aria-label="true">
+
+      <div class="container_info">
+
+          <h1 class="container_header"> <span>We're</span>  coming soon</h1>
+
+          <p class="container_info_ph">Hello fellow shoppers! We're currently building our new fashion store. 
+            Add your email below to stay up-to-date with announcements and our launch deals.</p>
+          
+          
+          <form id="submitForm" class="container_form">
+            <input id="inputSubmit" type="email" placeholder="Email Address" class="submitForm_input" aria-required="true">
+            <button id="btnSubmit" type="submit" aria-label="Submit Button" class="submitForm_submit">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+            <div id="alert" class="alert">
+              <p id="texto"></p>
+              <i id="icon" class="fas fa-times"></i>
+            </div>
+          </form>
+        
+        </div>
+
+    </div>
+    <img
+        src="./images/hero-desktop.jpg"
+        alt=""
+        aria-hidden="true"
+        class="img__hero oculto-mobile"
+      />
+      <img
+        src="./images/bg-pattern-desktop.svg"
+        alt=""
+        class="bg__desktop oculto-mobile"
+      />
+
+
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>
